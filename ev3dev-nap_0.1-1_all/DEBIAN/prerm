@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+
+# stop ev3dev-nap server
+invoke-rc.d ev3dev-nap stop
+ifdown tether

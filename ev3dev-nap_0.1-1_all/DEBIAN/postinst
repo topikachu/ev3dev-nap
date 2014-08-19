@@ -1,0 +1,17 @@
+#!/bin/sh
+set -e
+
+# Source debconf library.
+. /usr/share/debconf/confmodule
+
+
+
+
+# register ev3dev-nap
+update-rc.d ev3dev-nap defaults >/dev/null
+# register nap service
+sdptool add nap
+# start 
+ifup tether
+# start ev3dev-nap
+invoke-rc.d ev3dev-nap start

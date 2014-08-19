@@ -1,0 +1,14 @@
+#!/bin/bash
+set -e
+
+
+if [ "$1" = "remove" ]; then
+
+# Source debconf library.
+. /usr/share/debconf/confmodule
+
+# remove Django start script
+update-rc.d -f ev3dev-nap remove
+
+
+fi

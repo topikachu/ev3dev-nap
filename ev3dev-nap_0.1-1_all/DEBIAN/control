@@ -1,0 +1,9 @@
+Package: ev3dev-nap
+Version: 0.1-1
+Section: net
+Priority: optional
+Architecture: all
+Depends: python, python-gobject, bridge-utils, bluez
+Maintainer: Gong Yi <yi.gong@hp.com>
+Description: nap on ev3dev
+ This package setup nap (networking over bluetooth)

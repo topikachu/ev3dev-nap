@@ -1,0 +1,2 @@
+/etc/network/interfaces.d/tether
+/etc/init.d/ev3dev-nap
